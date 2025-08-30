@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <!--Título do Formulário-->
+    <h1>Formulario de Cadastro</h1>
+      <!--Título do Formulário e um parágrafo falando dele-->
+    <h2>lorem</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere deleniti alias pariatur id cupiditate quo illo, consequuntur praesentium ipsa, adipisci debitis quas reprehenderit! Nihil itaque consequuntur ab magni, veniam vitae!</p>
+    <!--Formulário de Cadastro-->
+    <form action="cadastro.php" method="post">
+        <!--Seperando os Campos de Email e senha dos outros campos por organização-->
+        <fieldset>
+            <legend>Nome e Sobrenome</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="digite o seu Nome" required/>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text"id="sobrenome" name="sobrenome" placeholder="digite o seu sobrenome" required/>
+        </fieldset>
+            <!--Email, Senha, Data de Nascimento, Gênero, Checkbox, Link, Iamgem, botões de enviar e apagar-->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="digite o seu email" required/>
+                <br/>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="digite a sua senha" required/>
+                <br/>
+                <label for="datanasc">Data de Nascimento:</label>
+                <input type="date" id="datanasc" name="datanasc" required/>
+                <br/>
+                <label for="genero">Gênero:</label>
+                <input type="radio" id="M" name="M" value="M" required/>
+                <label for="genero">M</label>
+                <input type="radio" id="F" name="M" value="F" required/>
+                <label for="genero">F</label>
+                <br/>
+                <label for ="checkbox">Gol</label>
+                <input type="checkbox" id="checkbox" name="checkbox" required/>
+                <label for ="checkbox">Uno</label>
+                <input type="checkbox" id="checkbox" name="checkbox" required/>
+                <!--Link e Imagem-->
+                <a href="https://github.com/Miguelpds10">Github</a>
+                <img src="icons8-linkedin-48.png" alt="linkedin"/>
+                <br/>
+            <!--Botões-->
+                <input type="submit" id="botao" name="botao" value="enviar"/>
+                <input type="reset" id="reset" name="reset" value="apagar"/>
+
+    </form>    
+</body>
+</html>
